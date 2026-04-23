@@ -44,7 +44,7 @@ export default function RecreationCalculatorPage() {
   return (
     <>
       <Head>
-        <title>{PAGE_TITLE} | CalcWise</title>
+        <title>{PAGE_TITLE} | LifeCalc</title>
         <meta name="description" content={PAGE_DESC} />
         <meta name="keywords" content="boat affordability calculator, RV cost calculator, boat loan calculator, RV loan payment calculator, recreation vehicle cost calculator, motorcycle loan calculator, true cost of owning a boat" />
         <meta property="og:title" content={PAGE_TITLE} />

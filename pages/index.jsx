@@ -5,36 +5,37 @@ import { CALCULATORS, SITE_NAME, SITE_DESCRIPTION } from '../lib/seo';
 import AdSlot from '../components/ads/AdSlot';
 
 const STATS = [
-  { value: '4', label: 'Free Calculators' },
+  { value: '5', label: 'Free Calculators' },
   { value: '100%', label: 'Client-Side — No Data Stored' },
   { value: '0', label: 'Sign-ups Required' },
   { value: '∞', label: 'Calculations Available' },
 ];
 
 const COLOR_MAP = {
-  blue: { bg: 'bg-blue-50', border: 'border-blue-200', icon: 'bg-blue-100 text-blue-600', badge: 'bg-blue-100 text-blue-700', btn: 'bg-blue-600 hover:bg-blue-700' },
-  purple: { bg: 'bg-purple-50', border: 'border-purple-200', icon: 'bg-purple-100 text-purple-600', badge: 'bg-purple-100 text-purple-700', btn: 'bg-purple-600 hover:bg-purple-700' },
-  orange: { bg: 'bg-orange-50', border: 'border-orange-200', icon: 'bg-orange-100 text-orange-600', badge: 'bg-orange-100 text-orange-700', btn: 'bg-orange-600 hover:bg-orange-700' },
-  teal: { bg: 'bg-teal-50', border: 'border-teal-200', icon: 'bg-teal-100 text-teal-600', badge: 'bg-teal-100 text-teal-700', btn: 'bg-teal-600 hover:bg-teal-700' },
+  blue:   { bg: 'bg-blue-50',   border: 'border-blue-200',   icon: 'bg-blue-100 text-blue-600',   btn: 'bg-blue-600 hover:bg-blue-700' },
+  purple: { bg: 'bg-purple-50', border: 'border-purple-200', icon: 'bg-purple-100 text-purple-600', btn: 'bg-purple-600 hover:bg-purple-700' },
+  green:  { bg: 'bg-green-50',  border: 'border-green-200',  icon: 'bg-green-100 text-green-600',  btn: 'bg-green-600 hover:bg-green-700' },
+  orange: { bg: 'bg-orange-50', border: 'border-orange-200', icon: 'bg-orange-100 text-orange-600', btn: 'bg-orange-600 hover:bg-orange-700' },
+  teal:   { bg: 'bg-teal-50',   border: 'border-teal-200',   icon: 'bg-teal-100 text-teal-600',   btn: 'bg-teal-600 hover:bg-teal-700' },
 };
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>{SITE_NAME} — Free Financial Calculators for Mortgage, LOC, Renovation & More</title>
+        <title>{SITE_NAME} — Free Financial Calculators for Mortgage, Car, LOC, Renovation & More</title>
         <meta name="description" content={SITE_DESCRIPTION} />
-        <meta name="keywords" content="mortgage calculator, line of credit calculator, renovation cost calculator, boat affordability calculator, financial calculators" />
+        <meta name="keywords" content="mortgage calculator, car loan calculator, line of credit calculator, renovation cost calculator, boat affordability calculator, financial calculators" />
         <meta property="og:title" content={`${SITE_NAME} — Free Financial Calculators`} />
         <meta property="og:description" content={SITE_DESCRIPTION} />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.calcwise.io" />
+        <link rel="canonical" href="https://www.yourlifecalc.com" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": SITE_NAME,
           "description": SITE_DESCRIPTION,
-          "url": "https://www.calcwise.io",
+          "url": "https://www.yourlifecalc.com",
         })}} />
       </Head>
 
@@ -52,10 +53,10 @@ export default function Home() {
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6">
               Financial Calculators <br />
-              <span className="text-accent-400">Built for Real Decisions</span>
+              <span className="text-accent-400">Built for Real Life</span>
             </h1>
             <p className="text-lg text-blue-100 mb-8 max-w-2xl leading-relaxed">
-              Instant, accurate calculations for mortgages, lines of credit, home renovations, and recreational purchases. Get the full picture — monthly payments, total interest, and true cost of ownership.
+              Instant, accurate calculations for mortgages, car loans, lines of credit, home renovations, and recreational purchases. Get the full picture — monthly payments, total interest, and true cost of ownership.
             </p>
             <div className="flex flex-wrap gap-3">
               {CALCULATORS.map(c => (
@@ -95,8 +96,7 @@ export default function Home() {
           <h2 className="text-3xl font-display font-bold text-slate-900 mb-3">Choose Your Calculator</h2>
           <p className="text-slate-500 max-w-xl mx-auto">Each calculator gives you a detailed breakdown so you can make confident financial decisions.</p>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {CALCULATORS.map((calc) => {
             const colors = COLOR_MAP[calc.color] || COLOR_MAP.blue;
             return (
@@ -107,7 +107,7 @@ export default function Home() {
                     {calc.icon}
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-display font-bold text-xl text-slate-900 mb-2 group-hover:text-brand-700 transition-colors">
+                    <h3 className="font-display font-bold text-lg text-slate-900 mb-2 group-hover:text-brand-700 transition-colors">
                       {calc.title}
                     </h3>
                     <p className="text-sm text-slate-600 leading-relaxed mb-4">{calc.description}</p>
@@ -122,11 +122,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why CalcWise */}
+      {/* Why LifeCalc */}
       <section className="bg-slate-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold mb-3">Why Use CalcWise?</h2>
+            <h2 className="text-3xl font-display font-bold mb-3">Why Use LifeCalc?</h2>
             <p className="text-slate-400 max-w-xl mx-auto">Built for accuracy, designed for clarity. No fluff, no upsells.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -134,7 +134,7 @@ export default function Home() {
               { icon: '⚡', title: 'Instant Results', desc: 'Calculations update in real-time as you type. No "calculate" button required.' },
               { icon: '🔒', title: 'Privacy First', desc: 'All calculations happen in your browser. No data is ever sent to a server.' },
               { icon: '💾', title: 'Saves Your Inputs', desc: 'Your calculator inputs are saved locally so you can come back anytime.' },
-              { icon: '📊', title: 'Visual Breakdowns', desc: 'Charts and amortization tables make complex numbers easy to understand.' },
+              { icon: '📊', title: 'Visual Breakdowns', desc: 'Charts and tables make complex numbers easy to understand at a glance.' },
               { icon: '📱', title: 'Mobile Friendly', desc: 'Works perfectly on any device — phone, tablet, or desktop.' },
               { icon: '🎯', title: 'No Sign-up', desc: 'Start calculating immediately. No account, no email, no credit card.' },
             ].map((f, i) => (
@@ -148,7 +148,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Bottom Ad */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex justify-center">
         <AdSlot type="rectangle" />
       </div>

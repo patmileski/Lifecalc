@@ -44,7 +44,7 @@ export default function RenovationCalculatorPage() {
   return (
     <>
       <Head>
-        <title>{PAGE_TITLE} | CalcWise</title>
+        <title>{PAGE_TITLE} | LifeCalc</title>
         <meta name="description" content={PAGE_DESC} />
         <meta name="keywords" content="renovation cost estimator, home renovation loan calculator, remodel financing calculator, home improvement cost calculator, kitchen renovation cost calculator, bathroom renovation cost, HELOC renovation calculator" />
         <meta property="og:title" content={PAGE_TITLE} />

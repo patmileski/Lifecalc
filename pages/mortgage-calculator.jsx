@@ -44,7 +44,7 @@ export default function MortgageCalculatorPage() {
   return (
     <>
       <Head>
-        <title>{PAGE_TITLE} | CalcWise</title>
+        <title>{PAGE_TITLE} | LifeCalc</title>
         <meta name="description" content={PAGE_DESC} />
         <meta name="keywords" content="mortgage calculator with taxes, mortgage calculator with insurance, monthly mortgage payment calculator, amortization calculator, home loan calculator, PITI calculator, 30 year mortgage calculator" />
         <meta property="og:title" content={PAGE_TITLE} />

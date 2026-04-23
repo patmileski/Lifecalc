@@ -44,7 +44,7 @@ export default function LOCCalculatorPage() {
   return (
     <>
       <Head>
-        <title>{PAGE_TITLE} | CalcWise</title>
+        <title>{PAGE_TITLE} | LifeCalc</title>
         <meta name="description" content={PAGE_DESC} />
         <meta name="keywords" content="line of credit payment calculator, HELOC calculator, LOC payoff calculator, credit line interest calculator, line of credit interest calculator, how long to pay off line of credit" />
         <meta property="og:title" content={PAGE_TITLE} />
