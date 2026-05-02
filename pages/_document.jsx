@@ -9,39 +9,30 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
 
-        {/* Favicon — replace with your actual favicon */}
+        {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-        {/* 
-          ════════════════════════════════════════════════════
-          GOOGLE ADSENSE — ACTIVATION INSTRUCTIONS:
-          1. Replace 'ca-pub-XXXXXXXXXXXXXXXXX' below with your real Publisher ID
-          2. Uncomment the <script> tag
-          3. Also update components/ads/AdSlot.jsx with your Publisher ID and slot IDs
-          4. Submit your site for review at https://adsense.google.com
-          ════════════════════════════════════════════════════
-        */}
-        {/* 
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="eOT_ovWxhNCbUgl7TbUEURNzIMOmEwnlTUyXNTF1MaE" />
+
+        {/* Google AdSense */}
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXX"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3628048404116197"
           crossOrigin="anonymous"
         />
-        */}
 
-        {/* Google Analytics — replace G-XXXXXXXXXX with your Measurement ID */}
-        {/* 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGH9Z7JLFZ" />
         <script dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
+            gtag('config', 'G-BGH9Z7JLFZ');
           `
         }} />
-        */}
       </Head>
       <body>
         <Main />
