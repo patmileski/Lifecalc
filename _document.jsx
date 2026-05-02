@@ -16,7 +16,7 @@ export default function Document() {
         {/* 
           ════════════════════════════════════════════════════
           GOOGLE ADSENSE — ACTIVATION INSTRUCTIONS:
-          1. Replace 'ca-pub-XXXXXXXXXXXXXXXXX' below with your real Publisher ID
+          1. Replace 'ca-pub-3628048404116197' below with your real Publisher ID
           2. Uncomment the <script> tag
           3. Also update components/ads/AdSlot.jsx with your Publisher ID and slot IDs
           4. Submit your site for review at https://adsense.google.com
@@ -25,7 +25,7 @@ export default function Document() {
         {/* 
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXX"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3628048404116197"
           crossOrigin="anonymous"
         />
         */}

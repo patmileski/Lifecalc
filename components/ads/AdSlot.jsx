@@ -65,7 +65,7 @@ export default function AdSlot({ type = 'rectangle', className = '', label = tru
           <ins
             className="adsbygoogle"
             style={{ display: 'block', width: config.width, height: config.height }}
-            data-ad-client="ca-pub-XXXXXXXXXXXXXXXXX"  // ← Replace with your Publisher ID
+            data-ad-client="ca-pub-3628048404116197"  // ← Replace with your Publisher ID
             data-ad-slot={config.slot}                   // ← Replace with your Ad Slot ID
             data-ad-format={config.format}
             data-full-width-responsive="true"
